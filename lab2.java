@@ -48,13 +48,38 @@ public class lab2 {
             }
 
             else{
-                for (int i = -1; i >= n; i--) {
-                    a = x;
-                    b = b * a;
+                if (x>=0) {
+                    for (int i = -1; i >= n; i--) {
+                        a = x;
+                        b = b * a;
 
+                    }
+                    System.out.print( "1/");
+                    System.out.print( b);
                 }
-                System.out.print( "1/");
-                System.out.print( b);
+                else{
+                    if(n%2==0){
+                        for (int i = -1; i >= n; i--) {
+                            a = x;
+                            b = b * a;
+
+                        }
+                        System.out.print( "1/");
+                        System.out.print( b);
+                    }
+                    else {
+                        for (int i = -1; i >= n; i--) {
+                            a = x;
+                            b = b * a*(-1);
+                        }
+                        System.out.print( "-1/");
+                        System.out.print( b);
+
+                    }
+
+
+             }
+
             }
 
 
